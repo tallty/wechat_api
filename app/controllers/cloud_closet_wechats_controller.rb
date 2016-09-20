@@ -4,11 +4,12 @@ class CloudClosetWechatsController < ApplicationController
       access_token: Rails.root.join(ENV["cloud_closet_app_access_token"]), jsapi_ticket: Rails.root.join(ENV["cloud_closet_app_jsapi_ticket"])
 
   def js_hash
-    page_url = if self.class.trusted_domain_fullname
-                 "#{self.class.trusted_domain_fullname}#{self.request.original_fullpath}"
-               else
-                 self.request.original_url
-               end
+    # page_url = if self.class.trusted_domain_fullname
+    #              "#{self.class.trusted_domain_fullname}#{self.request.original_fullpath}"
+    #            else
+    #              self.request.original_url
+    #            end
+    page_url = params[:page_url]
     @js_hash = self.wechat.jsapi_ticket.signature(page_url)
     render json: @js_hash
   end
