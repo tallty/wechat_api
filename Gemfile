@@ -26,6 +26,10 @@ gem 'rack-cors'
 # Read more: https://github.com/ctran/annotate_models
 # Running: rails g annotate:install
 gem 'annotate' 
+# A set of Rails responders to dry up your application
+# Read more: https://github.com/plataformatec/responders
+# Running: rails g responders:install
+gem "responders"
 ############################################################################################################
 
 group :development, :test do
