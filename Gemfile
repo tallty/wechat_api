@@ -33,6 +33,9 @@ gem "responders"
 # API, command and message handling for WeChat in Rails
 # Read more: https://github.com/Eric-Guo/wechat
 gem 'wechat'
+# Simple Rails app configuration
+# Read more: https://github.com/laserlemon/figaro
+gem "figaro"
 ############################################################################################################
 
 group :development, :test do

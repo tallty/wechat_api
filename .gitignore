@@ -28,3 +28,4 @@
 /vendor/*
 /config/database.yml
 /config/wechat.yml
+/config/application.yml

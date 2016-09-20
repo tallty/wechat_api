@@ -1,0 +1,1 @@
+json.js_hash @js_hash
