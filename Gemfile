@@ -30,6 +30,9 @@ gem 'annotate'
 # Read more: https://github.com/plataformatec/responders
 # Running: rails g responders:install
 gem "responders"
+# API, command and message handling for WeChat in Rails
+# Read more: https://github.com/Eric-Guo/wechat
+gem 'wechat'
 ############################################################################################################
 
 group :development, :test do

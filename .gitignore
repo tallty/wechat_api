@@ -19,3 +19,12 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ignore folder & files by project
+/doc/*
+/public/system/*
+/public/*
+/solr/
+/vendor/*
+/config/database.yml
+/config/wechat.yml
