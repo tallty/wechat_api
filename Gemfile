@@ -21,6 +21,13 @@ gem 'jbuilder', '~> 2.5'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 
+#############################################################################################################
+# Annotate Rails classes with schema and routes info
+# Read more: https://github.com/ctran/annotate_models
+# Running: rails g annotate:install
+gem 'annotate' 
+############################################################################################################
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
