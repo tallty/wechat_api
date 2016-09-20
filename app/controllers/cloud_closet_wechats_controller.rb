@@ -10,6 +10,7 @@ class CloudClosetWechatsController < ApplicationController
                  self.request.original_url
                end
     @js_hash = self.wechat.jsapi_ticket.signature(page_url)
+    render json: @js_hash
   end
 
   on :text do |request, content|
