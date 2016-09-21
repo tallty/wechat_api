@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resource :wechat, only: [:show, :create]
   resource :cloud_closet_wechat, only: [:show, :create] do
     member do
-      get 'js_hash'
+      post 'js_hash'
     end
   end
   resource :lvke_wechat, only: [:show, :create] do
