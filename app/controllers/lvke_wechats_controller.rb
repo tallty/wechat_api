@@ -9,7 +9,8 @@ class LvkeWechatsController < ApplicationController
     #            else
     #              self.request.original_url
     #            end
-    page_url = params[:page_url]
+    # page_url = params[:page_url]
+    page_url = self.request.original_url
     @js_hash = self.wechat.jsapi_ticket.signature(page_url)
     render json: @js_hash
   end
