@@ -17,19 +17,19 @@ button:
       -
         type: "view"
         name: "收费详情"
-        url:  ""
+        url:  "http://closet.tallty.com/"
       -
         type: "view"
         name: "衣橱预约"
-        url:  ""
+        url:  "http://closet.tallty.com/"
   -
     name: "Fans Club"
     sub_button:
       -
         type: "view"
         name: "VIP"
-        url:  ""
+        url:  "http://closet.tallty.com/"
       -
         type: "view"
         name: "个人中心"
-        url:  ""
+        url:  "http://closet.tallty.com/"
