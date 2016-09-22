@@ -8,28 +8,28 @@ button:
     sub_button:
       -
         type: "view"
-        name: "我的衣橱"
-        url: "http://closet.tallty.com/MyCloset"
-      -
-        type: "view"
-        name: "我的订单"
-        url:  "http://closet.tallty.com/users/1/orders"
+        name: "衣橱预约"
+        url:  "http://closet.tallty.com/appointment"
       -
         type: "view"
         name: "收费详情"
-        url:  "http://closet.tallty.com/"
+        url:  "http://closet.tallty.com/charge_detail"
       -
         type: "view"
-        name: "衣橱预约"
-        url:  "http://closet.tallty.com/"
+        name: "我的订单"
+        url:  "http://closet.tallty.com/orders"
+      -
+        type: "view"
+        name: "我的衣橱"
+        url: "http://closet.tallty.com/MyCloset"
   -
     name: "Fans Club"
     sub_button:
       -
         type: "view"
-        name: "VIP"
-        url:  "http://closet.tallty.com/"
+        name: "个人中心"
+        url:  "http://closet.tallty.com/user"
       -
         type: "view"
-        name: "个人中心"
-        url:  "http://closet.tallty.com/"
+        name: "VIP"
+        url:  "http://closet.tallty.com/vip"
