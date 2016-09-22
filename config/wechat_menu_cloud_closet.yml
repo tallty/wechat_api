@@ -1,0 +1,35 @@
+button:
+ -
+  type: "view"
+  name: "品牌主页"
+  url: "http://closet.tallty.com/"
+ -
+  name: "云衣橱"
+  sub_button:
+   -
+    type: "view"
+    name: "我的衣橱"
+    url: "http://closet.tallty.com/MyCloset"
+   -
+    type: "view"
+    name: "我的订单"
+    url:  "http://closet.tallty.com/users/1/orders"
+   -
+    type: "view"
+    name: "收费详情"
+    url:  ""
+  -
+    type: "view"
+    name: "衣橱预约"
+    url:  ""
+ -
+  name: "Fans Club"
+  sub_button:
+   -
+    type: "view"
+    name: "VIP"
+    url:  ""
+   -
+    type: "view"
+    name: "个人中心"
+    url:  ""
