@@ -16,6 +16,9 @@ module ClientApiConcern
       @access_token = self.wechat.web_access_token(code)
       logger.info "web_access_token response is:#{@access_token}"
       render json: @access_token
+    rescue Wechat::ResponseError => e
+      logger.info "web_access_token response is:#{e.inspect}"
+      render json: { error: e.message, errcode: e.errcode }, status: 400
     end
   end
 end
