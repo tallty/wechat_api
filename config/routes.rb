@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     member do
       post 'js_hash'
       post 'web_access_token'
+      post 'wx_pay'
+      post 'wx_notify'
     end
   end
   resource :lvke_wechat, only: [:show, :create] do

@@ -33,6 +33,9 @@ gem "responders"
 # API, command and message handling for WeChat in Rails
 # Read more: https://github.com/Eric-Guo/wechat
 gem 'wechat'
+# An unofficial simple wechat pay gem
+# https://github.com/jasl/wx_pay
+gem 'wx_pay'
 # Simple Rails app configuration
 # Read more: https://github.com/laserlemon/figaro
 gem "figaro"
