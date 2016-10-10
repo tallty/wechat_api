@@ -20,5 +20,14 @@ module ClientApiConcern
       logger.info "web_access_token response is:#{e.inspect}"
       render json: { error: e.message, error_code: e.error_code }, status: 400
     end
+
+    def template_message
+      template = params[:template]
+      openid = params[:openid]
+      logger.info "template_message template is:#{template.inspect}"
+      response = wechat.template_message_send Wechat::Message.to(openid).template(template)
+      logger.info "template_message response is:#{response}"
+      render json: response
+    end
   end
 end
