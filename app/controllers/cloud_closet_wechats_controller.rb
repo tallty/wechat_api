@@ -27,7 +27,11 @@ class CloudClosetWechatsController < ApplicationController
     prepay_result = WxPay::Service.invoke_unifiedorder pay_params, wx_pay_options
     logger.info "wx_pay prepay_result is:#{prepay_result}"
     if prepay_result.success?
-      response = WxPay::Service.generate_js_pay_req prepay_result, wx_pay_options
+      pay_req_params = {
+        prepayid: prepay_result[:prepay_id], # fetch by call invoke_unifiedorder with `trade_type` is `JSAPI`
+        noncestr: prepay_result[:nonce_str] # must same as given to invoke_unifiedorder
+      }
+      response = WxPay::Service.generate_js_pay_req pay_req_params, wx_pay_options
       logger.info "wx_pay response is:#{response}"
       render json: response
     else
