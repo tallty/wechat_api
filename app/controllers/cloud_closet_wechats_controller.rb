@@ -17,14 +17,14 @@ class CloudClosetWechatsController < ApplicationController
     pay_params = {
       body: "乐存好衣账户充值",
       out_trade_no: "trade-#{Time.now.to_i}",
-      total_fee: wx_pay_params[:total_fee],
+      total_fee: wx_pay_params[:total_fee].to_f,
       spbill_create_ip: request.remote_ip,
       notify_url: wx_notify_cloud_closet_wechat_url,
       trade_type: 'JSAPI',
       openid: wx_pay_params[:openid]
     }
     logger.info "wxpay pay_params is:#{pay_params}"
-    prepay_result = WxPay::Service.invoke_unifiedorder(pay_params), wx_pay_options
+    prepay_result = WxPay::Service.invoke_unifiedorder pay_params, wx_pay_options
     logger.info "wx_pay prepay_result is:#{prepay_result}"
     if prepay_result.success?
       response = WxPay::Sign.generate_js_pay_req prepay_result, wx_pay_options
