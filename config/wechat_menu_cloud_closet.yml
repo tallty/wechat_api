@@ -1,35 +1,42 @@
-button:
+-
+  name: "企业详情"
+  sub_button: 
   -
     type: "view"
     name: "品牌主页"
     url: "http://closet.tallty.com/"
   -
-    name: "云衣橱"
-    sub_button:
-      -
-        type: "view"
-        name: "衣橱预约"
-        url:  "http://closet.tallty.com/appointment"
-      -
-        type: "view"
-        name: "收费详情"
-        url:  "http://closet.tallty.com/charge_detail"
-      -
-        type: "view"
-        name: "我的订单"
-        url:  "http://closet.tallty.com/orders"
-      -
-        type: "view"
-        name: "我的衣橱"
-        url: "http://closet.tallty.com/MyCloset"
+    type: "view"
+    name: "会员权益"
+    url: "http://closet.tallty.com/vip"
   -
-    name: "Fans Club"
-    sub_button:
-      -
-        type: "view"
-        name: "个人中心"
-        url:  "http://closet.tallty.com/user"
-      -
-        type: "view"
-        name: "VIP"
-        url:  "http://closet.tallty.com/vip"
+    type: "view"
+    name: "收费详情"
+    url: "http://closet.tallty.com/charge_detail"
+  -
+    type: "view"
+    name: "服务流程"
+    url: "http://closet.tallty.com/"
+-
+  type: "view"
+  name: "下单预约"
+  url:  "http://closet.tallty.com/appointment"
+-
+  name: "个人中心"
+  sub_button: 
+  -
+    type: "view"
+    name: "我的订单"
+    url:  "http://closet.tallty.com/orders"
+  -
+    type: "view"
+    name: "我的衣橱"
+    url:  "http://closet.tallty.com/MyCloset"
+  -
+    type: "view"
+    name: "我的账户"
+    url:  "http://closet.tallty.com/user"
+  -
+    type: "view"
+    name: "常见问题"
+    url: "http://closet.tallty.com/help"
