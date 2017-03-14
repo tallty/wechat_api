@@ -1,3 +1,4 @@
+button:
 -
   name: "企业详情"
   sub_button: 
@@ -16,7 +17,7 @@
   -
     type: "view"
     name: "服务流程"
-    url: "http://closet.tallty.com/"
+    url: "http://closet.tallty.com/process"
 -
   type: "view"
   name: "下单预约"
