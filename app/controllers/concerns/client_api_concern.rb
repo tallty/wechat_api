@@ -34,6 +34,9 @@ module ClientApiConcern
       openid = params[:openid]
       response = wechat.user(openid)
       render json: response
+    rescue Wechat::ResponseError => e
+      logger.info "user_wechat_info error response is:#{e.inspect}"
+      render json: { error: e.message, error_code: e.error_code}, status: 400
     end
   end
 end
