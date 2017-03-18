@@ -39,6 +39,9 @@ gem 'wx_pay'
 # Simple Rails app configuration
 # Read more: https://github.com/laserlemon/figaro
 gem "figaro"
+# Automatically generate API documentation from RSpec
+# Read more: https://github.com/zipmark/rspec_api_documentation
+gem "rspec_api_documentation"
 ############################################################################################################
 
 group :development, :test do
