@@ -29,5 +29,11 @@ module ClientApiConcern
       logger.info "template_message response is:#{response}"
       render json: response
     end
+
+    def user_wechat_info
+      openid = params[:openid]
+      response = wechat.user(openid)
+      render json: response
+    end
   end
 end

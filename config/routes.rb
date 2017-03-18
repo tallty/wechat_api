@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       post 'wx_pay'
       post 'wx_notify'
       post 'template_message'
+      get 'user_wechat_info'
     end
   end
   resource :lvke_wechat, only: [:show, :create] do
