@@ -1,0 +1,56 @@
+button:
+-
+  name: '实景地图'
+  sub_button: 
+  -
+    type: 'view'
+    name: '360°导览'
+    url: 'http://museum.tallty.com/static/panorama/index14.html'
+  -
+    type: 'view'
+    name: '场馆地图'
+    url: 'http://museum.tallty.com/static/maps/floor2.jpg'
+  -
+    type: 'view'
+    name: '展馆天气'
+    url: 'http://museum.tallty.com/maps'
+-
+  name: '展馆介绍'
+  type: 'view'
+  url: 'http://museum.tallty.com/introduction'
+  # sub_button: 
+  # -
+  #   type: 'view'
+  #   name: '博物馆介绍'
+  #   url: 'http://closet.tallty.com/'
+  # -
+  #   type: 'view'
+  #   name: '展馆快讯'
+  #   url: 'http://closet.tallty.com/vip'
+  # -
+  #   type: 'view'
+  #   name: '展点介绍'
+  #   url: 'http://closet.tallty.com/charge_detail'
+-
+  name: '服务中心'
+  sub_button: 
+  -
+    type: 'view'
+    name: '留言建议'
+    url:  'http://museum.tallty.com/feedback'
+  -
+    type: 'view'
+    name: '参观预约'
+    url:  'http://museum.tallty.com/create_booking'
+  -
+    type: 'view'
+    name: '我的视频'
+    url: 'http://museum.tallty.com/videos'
+  # -
+  #   type: 'view'
+  #   name: '一键导航'
+  #   url:  'http://closet.tallty.com/user'
+  -
+    type: 'view'
+    name: '个人中心'
+    url: 'http://museum.tallty.com/personal'
