@@ -1,3 +1,6 @@
+# wechat 命令无法读取正确 运行环境
+RAILS_ENV: 'production'
+
 cloud_closet_app_id: ""
 cloud_closet_app_secret: ""
 cloud_closet_app_token: ""
