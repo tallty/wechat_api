@@ -25,5 +25,14 @@ Rails.application.routes.draw do
       get 'user_wechat_info'
     end
   end
+
+  resource :africa_pay, only: [:show, :create] do
+    member do
+      post 'js_hash'
+      post 'web_access_token'
+      # post 'template_message'
+      get 'user_wechat_info'
+    end
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
