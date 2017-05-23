@@ -1,10 +1,10 @@
 button:
 -
-  name: '实景地图'
+  name: '气象博物馆'
   sub_button: 
   -
     type: 'view'
-    name: '360°导览'
+    name: '展馆导览'
     url: 'http://museum.tallty.com/static/panorama/index14.html'
   -
     type: 'view'
@@ -15,9 +15,9 @@ button:
     name: '展馆天气'
     url: 'http://museum.tallty.com/maps'
 -
-  name: '展馆介绍'
+  name: '上海天气'
   type: 'view'
-  url: 'http://museum.tallty.com/introduction'
+  url: 'http://wechat.weather-huayun.com/#/weather'
   # sub_button: 
   # -
   #   type: 'view'
