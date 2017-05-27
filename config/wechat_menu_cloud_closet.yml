@@ -1,7 +1,7 @@
 button:
 -
   name: "企业详情"
-  sub_button: 
+  sub_button:
   -
     type: "view"
     name: "品牌主页"
@@ -19,9 +19,9 @@ button:
     name: "服务流程"
     url: "http://closet.tallty.com/process"
   -
-  type: "view"
-  name: "常见问题"
-  url: "http://closet.tallty.com/help"
+    type: "view"
+    name: "常见问题"
+    url: "http://closet.tallty.com/help"
 -
   type: "view"
   name: "下单预约"
