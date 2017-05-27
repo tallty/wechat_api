@@ -18,6 +18,10 @@ button:
     type: "view"
     name: "服务流程"
     url: "http://closet.tallty.com/process"
+  -
+  type: "view"
+  name: "常见问题"
+  url: "http://closet.tallty.com/help"
 -
   type: "view"
   name: "下单预约"
@@ -39,5 +43,10 @@ button:
     url:  "http://closet.tallty.com/user"
   -
     type: "view"
-    name: "常见问题"
-    url: "http://closet.tallty.com/help"
+    name: "华服租赁"
+    url:  "http://closet.tallty.com/rent"
+  -
+    type: "view"
+    name: "一键转卖"
+    url:  "http://closet.tallty.com/sell"
+
