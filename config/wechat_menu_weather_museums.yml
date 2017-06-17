@@ -20,7 +20,7 @@ button:
   url: 'http://wechat.weather-huayun.com/#/weather'
 -
   name: '服务中心'
-  sub_button: 
+  sub_button:
   -
     type: 'view'
     name: '留言建议'
@@ -33,6 +33,10 @@ button:
   #   type: 'view'
   #   name: '我的视频'
   #   url: 'http://museum.tallty.com/videos'
+  -
+    type: 'view'
+    name: '一键导航'
+    url: 'http://museum.tallty.com/open_location'
   -
     type: 'view'
     name: '个人中心'
