@@ -1,39 +1,26 @@
 button:
 -
   name: '气象博物馆'
-  sub_button: 
+  sub_button:
+  -
+    type: 'view'
+    name: '展馆概述'
+    url: 'http://museum.tallty.com/presentation'
   -
     type: 'view'
     name: '展馆导览'
     url: 'http://museum.tallty.com/static/panorama/index14.html'
   -
     type: 'view'
-    name: '场馆地图'
-    url: 'http://museum.tallty.com/static/maps/floor2.jpg'
-  -
-    type: 'view'
-    name: '展馆天气'
-    url: 'http://museum.tallty.com/maps'
+    name: '展点介绍'
+    url: 'http://museum.tallty.com/display'
 -
   name: '上海天气'
   type: 'view'
   url: 'http://wechat.weather-huayun.com/#/weather'
-  # sub_button: 
-  # -
-  #   type: 'view'
-  #   name: '博物馆介绍'
-  #   url: 'http://closet.tallty.com/'
-  # -
-  #   type: 'view'
-  #   name: '展馆快讯'
-  #   url: 'http://closet.tallty.com/vip'
-  # -
-  #   type: 'view'
-  #   name: '展点介绍'
-  #   url: 'http://closet.tallty.com/charge_detail'
 -
   name: '服务中心'
-  sub_button: 
+  sub_button:
   -
     type: 'view'
     name: '留言建议'
@@ -42,14 +29,14 @@ button:
     type: 'view'
     name: '参观预约'
     url:  'http://museum.tallty.com/create_booking'
-  -
-    type: 'view'
-    name: '我的视频'
-    url: 'http://museum.tallty.com/videos'
   # -
   #   type: 'view'
-  #   name: '一键导航'
-  #   url:  'http://closet.tallty.com/user'
+  #   name: '我的视频'
+  #   url: 'http://museum.tallty.com/videos'
+  -
+    type: 'view'
+    name: '一键导航'
+    url: 'http://museum.tallty.com/open_location'
   -
     type: 'view'
     name: '个人中心'
