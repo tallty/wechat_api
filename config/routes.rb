@@ -26,6 +26,15 @@ Rails.application.routes.draw do
     end
   end
 
+  resource :chen_test, only: [:show, :create] do
+    member do
+      post 'js_hash'
+      post 'web_access_token'
+      post 'template_message'
+      get 'user_wechat_info'
+    end
+  end
+
   resource :africa_pay, only: [:show, :create] do
     member do
       post 'js_hash'
