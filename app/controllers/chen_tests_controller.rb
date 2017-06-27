@@ -1,4 +1,4 @@
-class ChenTestController < ApplicationController
+class ChenTestsController < ApplicationController
   # For details on the DSL available within this file, see https://github.com/Eric-Guo/wechat#rails-responder-self-dsl
   wechat_responder account: :chen_test
 
