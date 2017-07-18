@@ -32,7 +32,7 @@ button:
   -
     type: "view"
     name: "预约取衣"
-    url:  "http://closet.tallty.com/cart"
+    url:  "http://closet.tallty.com/MyCloset"
 -
   name: "个人中心"
   sub_button: 
