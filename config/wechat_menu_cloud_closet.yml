@@ -23,9 +23,16 @@ button:
     name: "常见问题"
     url: "http://closet.tallty.com/help"
 -
-  type: "view"
-  name: "下单预约"
-  url:  "http://closet.tallty.com/appointment"
+  name: '在线预约'
+  sub_button: 
+  -
+    type: "view"
+    name: "预约存衣"
+    url:  "http://closet.tallty.com/appointment"
+  -
+    type: "view"
+    name: "预约取衣"
+    url:  "http://closet.tallty.com/MyCloset"
 -
   name: "个人中心"
   sub_button: 
