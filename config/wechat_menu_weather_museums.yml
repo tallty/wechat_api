@@ -17,7 +17,7 @@ button:
 -
   name: '上海天气'
   type: 'view'
-  url: 'http://wechat.weather-huayun.com/#/weather'
+  url: 'http://itianqi.dashenw.cn/#/weather'
 -
   name: '服务中心'
   sub_button:
