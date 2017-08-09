@@ -17,6 +17,15 @@ Rails.application.routes.draw do
     end
   end
 
+  resource :smart_life_wechat, only: [:show, :create] do
+    member do
+      post 'js_hash'
+      post 'web_access_token'
+      post 'template_message'
+      get 'user_wechat_info'
+    end
+  end
+
   resource :weather_museum, only: [:show, :create] do
     member do
       post 'js_hash'
