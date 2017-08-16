@@ -26,7 +26,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resource :dt_edu_wechats, only: [:show, :create] do
+  resource :dt_edu_wechat, only: [:show, :create] do
     member do
       post 'js_hash'
       post 'web_access_token'
