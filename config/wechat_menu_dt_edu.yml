@@ -1,0 +1,5 @@
+button:
+-
+  name: '大唐双选会'
+  type: 'view'
+  url: 'http://dt-edu.tallty.com'
