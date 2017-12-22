@@ -1,4 +1,4 @@
-class InnovationCenterController < ApplicationController
+class InnovationCentersController < ApplicationController
   # For details on the DSL available within this file, see https://github.com/Eric-Guo/wechat#rails-responder-self-dsl
   wechat_responder account: :innovation_center
 
