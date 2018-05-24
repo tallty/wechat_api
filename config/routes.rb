@@ -35,6 +35,15 @@ Rails.application.routes.draw do
     end
   end
 
+  resource :stiei_job, only: [:show, :create] do
+    member do
+      post 'js_hash'
+      post 'web_access_token'
+      post 'template_message'
+      get 'user_wechat_info'
+    end
+  end
+
   resource :innovation_center, only: [:show, :create] do
     member do
       post 'js_hash'
