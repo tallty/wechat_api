@@ -38,5 +38,19 @@ module ClientApiConcern
       logger.info "user_wechat_info error response is:#{e.inspect}"
       render json: { error: e.message, error_code: e.error_code}, status: 400
     end
+
+    def web_userinfo
+      code = params[:code]
+      logger.info "web_access_token request code is:#{code}"
+      web_access_token = self.wechat.web_access_token(code)
+      logger.info "web_access_token response is:#{web_access_token}"
+      access_token = web_access_token['access_token']
+      openid = web_access_token['openid']
+      @user_info = self.wechat.web_userinfo access_token, openid
+      render json: @user_info
+    rescue Wechat::ResponseError => e
+      logger.info "web_userinfo response is:#{e.inspect}"
+      render json: { error: e.message, error_code: e.error_code }, status: 400
+    end
   end
 end

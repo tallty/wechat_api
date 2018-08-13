@@ -50,6 +50,7 @@ Rails.application.routes.draw do
       post 'web_access_token'
       post 'template_message'
       get 'user_wechat_info'
+      get 'web_userinfo'
     end
   end
 
