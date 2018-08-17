@@ -54,6 +54,16 @@ Rails.application.routes.draw do
     end
   end
 
+  resource :print_offical, only: [:show, :create] do
+    member do
+      post 'js_hash'
+      post 'web_access_token'
+      post 'template_message'
+      get 'user_wechat_info'
+      get 'web_userinfo'
+    end
+  end
+
   resource :innovation_center, only: [:show, :create] do
     member do
       post 'js_hash'
