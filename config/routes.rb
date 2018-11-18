@@ -44,6 +44,15 @@ Rails.application.routes.draw do
     end
   end
 
+  resource :garage, only: [:show, :create] do
+    member do
+      post 'js_hash'
+      post 'web_access_token'
+      post 'template_message'
+      get 'user_wechat_info'
+    end
+  end
+
   resource :print, only: [:show, :create] do
     member do
       post 'js_hash'
