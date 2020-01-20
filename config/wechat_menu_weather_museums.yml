@@ -15,9 +15,9 @@ button:
     name: '展点介绍'
     url: 'http://museum.tallty.com/display'
 -
-  name: '上海天气'
+  name: '摄影展投稿'
   type: 'view'
-  url: 'http://itianqi.dashenw.cn/#/weather'
+  url: 'https://jinshuju.net/f/Depewy'
 -
   name: '服务中心'
   sub_button:
