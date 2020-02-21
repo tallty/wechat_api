@@ -15,9 +15,16 @@ button:
     name: '展点介绍'
     url: 'http://museum.tallty.com/display'
 -
-  name: '摄影展投稿'
-  type: 'view'
-  url: 'https://jinshuju.net/f/Depewy'
+  name: '线上活动'
+  sub_button:
+  -
+    type: 'view'
+    name: '摄影展投稿'
+    url: 'https://jinshuju.net/f/Depewy'
+  -
+    type: 'view'
+    name: '有奖竞答'
+    url: 'https://jinshuju.net/f/abdOaT'
 -
   name: '服务中心'
   sub_button:
