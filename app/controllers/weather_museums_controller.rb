@@ -4,7 +4,8 @@ class WeatherMuseumsController < ApplicationController
 
   include ClientApiConcern
 
-  on :text do |request, content|
-    request.reply.text "echo: #{content}" # Just echo
+  # oWGeSuIVAUEBzrs7pVhtIGzA31O4
+  on :text, with: 'open_id' do |request|
+    request.reply.text(request.message_hash['FromUserName'])
   end
 end
